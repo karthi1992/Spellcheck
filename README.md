@@ -64,10 +64,10 @@ One of the possible parameters is the spellcheck.dictionary to use, and multiple
 >     </arr>
 >     </requestHandler>
 
-Querying the Spellchecker:
+#### **Querying the Spellchecker**
 >     http://178.63.22.132:8983/solr/amc_test/spell?df=text&spellcheck.q=%22microsof%22&spellcheck=true&wt=xml&spellcheck.collateParam.q.op=AND
 
-Results:
+#### **Results**
 >     <response>
 >     <lst name="responseHeader">
 >     <int name="status">0</int>
