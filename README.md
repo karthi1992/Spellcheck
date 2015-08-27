@@ -6,7 +6,7 @@ The SpellCheck component is designed to provide inline query suggestions based o
 Define Spell Check in solrconfig.xml.
 Here, we follow a Index based solr spellcheker
 
-IndexBasedSpellChecker
+
 The IndexBasedSpellChecker uses a Solr index as the basis for a parallel index used for spell checking. It requires defining a field as the basis for the index terms; a common practice is to copy terms from some fields (such as title, body, etc.) to another field created for spell checking. Here is a simple example of configuring solrconfig.xml with the IndexBasedSpellChecker:
 
 >      <searchComponent name="spellcheck" class="solr.SpellCheckComponent">  
