@@ -68,5 +68,37 @@ Querying the Spellchecker:
 >     http://178.63.22.132:8983/solr/amc_test/spell?df=text&spellcheck.q=%22microsof%22&spellcheck=true&wt=xml&spellcheck.collateParam.q.op=AND
 
 Results:
-<response><lst name="responseHeader"><int name="status">0</int><int name="QTime">1390</int></lst><str name="command">build</str><result name="response" numFound="0" start="0"/><lst name="spellcheck"><lst name="suggestions"><lst name="microsof"><int name="numFound">3</int><int name="startOffset">1</int><int name="endOffset">9</int><int name="origFreq">0</int><arr name="suggestion"><lst><str name="word">microsoft</str><int name="freq">222</int></lst><lst><str name="word">microsd</str><int name="freq">63</int></lst><lst><str name="word">#microsoft</str><int name="freq">8</int></lst></arr></lst><bool name="correctlySpelled">false</bool></lst></lst></response>
+<response>
+<lst name="responseHeader">
+<int name="status">0</int>
+<int name="QTime">1390</int>
+</lst>
+<str name="command">build</str>
+<result name="response" numFound="0" start="0"/>
+<lst name="spellcheck">
+<lst name="suggestions">
+<lst name="microsof">
+<int name="numFound">3</int>
+<int name="startOffset">1</int>
+<int name="endOffset">9</int>
+<int name="origFreq">0</int>
+<arr name="suggestion">
+<lst>
+<str name="word">microsoft</str>
+<int name="freq">222</int>
+</lst>
+<lst>
+<str name="word">microsd</str>
+<int name="freq">63</int>
+</lst>
+<lst>
+<str name="word">#microsoft</str>
+<int name="freq">8</int>
+</lst>
+</arr>
+</lst>
+<bool name="correctlySpelled">false</bool>
+</lst>
+</lst>
+</response>
 
